@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Ecommerce Visual Quality Report",
+  "type": "object",
+  "required": ["status", "product_fidelity", "visual_quality", "text_accuracy", "issues"],
+  "properties": {
+    "status": {"enum": ["pass", "needs_revision", "manual_review"]},
+    "product_fidelity": {"type": "number", "minimum": 0, "maximum": 1},
+    "visual_quality": {"type": "number", "minimum": 0, "maximum": 1},
+    "text_accuracy": {"type": ["number", "null"], "minimum": 0, "maximum": 1},
+    "issues": {"type": "array", "items": {"type": "string"}},
+    "notes": {"type": "array", "items": {"type": "string"}}
+  }
+}
