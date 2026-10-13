@@ -1,0 +1,19 @@
+{
+  "style_name": "clean premium soft studio",
+  "canvas": {"width": 1000, "height": 1000, "aspect_ratio": "1:1"},
+  "composition": {
+    "layout": "center-weighted product with top-left text reserve",
+    "camera_angle": "slightly elevated three-quarter view",
+    "focal_hierarchy": ["product", "supporting prop", "text zone"],
+    "negative_space": "generous top-left and outer margins"
+  },
+  "palette": ["#F3EFE8", "#D6C4B2", "#202020"],
+  "lighting": {"direction": "upper-left", "quality": "soft", "contrast": "low-medium", "shadow": "broad soft contact shadow"},
+  "background": "minimal warm studio surface",
+  "product_presentation": {"position": "center", "scale": "large", "orientation": "three-quarter", "interaction": "resting naturally on surface"},
+  "typography_zones": [],
+  "decorative_elements": ["one subtle prop", "soft shadow gradient"],
+  "mood": "calm, premium, clean",
+  "perceived_price_tier": "mid-high",
+  "literal_copy_exclusions": ["third-party logo", "unique character artwork", "watermark"]
+}
