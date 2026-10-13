@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Ecommerce Visual DNA",
+  "type": "object",
+  "required": ["canvas", "composition", "palette", "lighting", "background", "product_presentation", "mood", "literal_copy_exclusions"],
+  "properties": {
+    "style_name": {"type": "string"},
+    "canvas": {"type": "object", "required": ["aspect_ratio"], "properties": {"width": {"type": ["integer", "null"]}, "height": {"type": ["integer", "null"]}, "aspect_ratio": {"type": "string"}}},
+    "composition": {"type": "object", "properties": {"layout": {"type": "string"}, "camera_angle": {"type": "string"}, "focal_hierarchy": {"type": "array", "items": {"type": "string"}}, "negative_space": {"type": "string"}}},
+    "palette": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+    "lighting": {"type": "object", "properties": {"direction": {"type": "string"}, "quality": {"type": "string"}, "contrast": {"type": "string"}, "shadow": {"type": "string"}}},
+    "background": {"type": "string"},
+    "product_presentation": {"type": "object", "properties": {"position": {"type": "string"}, "scale": {"type": "string"}, "orientation": {"type": "string"}, "interaction": {"type": "string"}}},
+    "typography_zones": {"type": "array", "items": {"type": "object"}},
+    "decorative_elements": {"type": "array", "items": {"type": "string"}},
+    "mood": {"type": "string"},
+    "perceived_price_tier": {"type": "string"},
+    "literal_copy_exclusions": {"type": "array", "items": {"type": "string"}}
+  }
+}
