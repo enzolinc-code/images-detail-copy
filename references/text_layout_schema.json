@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Editable Text Layout",
+  "type": "object",
+  "required": ["canvas", "layers"],
+  "properties": {
+    "canvas": {"type": "object"},
+    "layers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "text", "x", "y", "width", "height"],
+        "properties": {
+          "id": {"type": "string"}, "text": {"type": "string"}, "x": {"type": "number"}, "y": {"type": "number"}, "width": {"type": "number"}, "height": {"type": "number"},
+          "font_family": {"type": "string"}, "font_size": {"type": "number"}, "font_weight": {"type": "string"}, "alignment": {"type": "string"}
+        }
+      }
+    }
+  }
+}
