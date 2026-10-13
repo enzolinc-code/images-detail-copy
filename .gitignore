@@ -1,0 +1,8 @@
+__pycache__/
+.pytest_cache/
+.venv/
+.env
+outputs/*.png
+outputs/*.jpg
+outputs/*.jpeg
+outputs/*.webp
