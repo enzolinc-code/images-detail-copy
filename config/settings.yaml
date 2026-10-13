@@ -1,0 +1,15 @@
+project:
+  name: ecommerce-visual-clone
+  version: 0.1.0
+
+defaults:
+  mode: style_rebuild
+  purpose: taobao_main_image
+  output_width: 1000
+  output_height: 1000
+  preserve_product_fidelity: true
+  render_dense_chinese_text_in_image_model: false
+
+quality:
+  minimum_dimension: 512
+  require_manual_review_on_structural_change: true
